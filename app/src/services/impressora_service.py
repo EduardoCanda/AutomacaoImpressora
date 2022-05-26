@@ -2,11 +2,16 @@ import pyautogui as pg
 import time
 
 from typing import List
+from src.services.logger_service import Logger
 
 pg.PAUSE = 1
 
 
-def imprimir_arquivos(caminho_arquivos: List[str], webdriver):
+def imprimir_arquivos(
+        caminho_arquivos: List[str],
+        webdriver,
+        logger: Logger
+):
     for caminho in caminho_arquivos:
         webdriver.get(caminho)
 
@@ -20,3 +25,4 @@ def imprimir_arquivos(caminho_arquivos: List[str], webdriver):
         # Apertar botão imprimir
         pg.press('enter')
         time.sleep(1)
+        logger.gravar_log(f'Arquivo {caminho} adicionado na fila de impressão.')
