@@ -12,7 +12,10 @@ def imprimir_arquivos(
         webdriver,
         logger: Logger
 ):
+    logger.gravar_log('Iniciando serviço de impressão...')
+
     for caminho in caminho_arquivos:
+        # Abrir arquivo no navegador
         webdriver.get(caminho)
 
         # Aguardar arquivo carregar no navegador

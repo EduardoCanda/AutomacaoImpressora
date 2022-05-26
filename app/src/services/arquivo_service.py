@@ -21,6 +21,8 @@ class ArquivoService:
         self.logger = logger
 
     def carregar_caminho_arquivos(self) -> List[str]:
+        self.logger.gravar_log('Carregando caminho dos arquivos...')
+
         self.arquivos = [
             f for f in listdir(self.pasta_imprimir) if isfile(
                 join(self.pasta_imprimir, f)
@@ -31,13 +33,12 @@ class ArquivoService:
             f'{self.pasta_imprimir}/{arquivo}' for arquivo in self.arquivos
         ]
 
-        self.logger.gravar_log(
-            f'Caminho dos arquivos carregados: {self.arquivos_path}'
-        )
-
         if not self.arquivos_path:
             self.logger.gravar_log('Não há arquivos para imprimir.')
-            self.logger.gravar_log('Fim do programa.')
+
+        self.logger.gravar_log(
+            f'Arquivos {self.arquivos} carregados'
+        )
 
         return self.arquivos_path
 

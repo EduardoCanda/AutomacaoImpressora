@@ -12,8 +12,9 @@ class Logger:
         )
 
     def gravar_log(self, mensagem):
-        self.__arquivo.write(mensagem + '\n')
+        data_hora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        self.__arquivo.write(f'{data_hora}\t{mensagem}\n')
 
     def finalizar_log(self):
-        self.gravar_log('Fim do programa.')
+        self.gravar_log('Fim de execução.')
         self.__arquivo.close()
