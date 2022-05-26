@@ -1,4 +1,4 @@
-Este projeto serve para mandar arquivos PDF para a impressão automaticamente.
+## Este projeto serve para mandar arquivos para a impressão automaticamente.
 
 ### Pacotes externos instalados:
     selenium==4.1.5
@@ -16,4 +16,6 @@ Este projeto serve para mandar arquivos PDF para a impressão automaticamente.
     Nesta pasta, o programa vai gerar um arquivo .txt com os logs de execução.
 
 ### OBS:
-Se não tiver essas três pastas, o programa não vai funcionar de maneira correta.
+    Caso essas pastas não estejam criadas, o programa vai se encarregar de criar as mesmas. 
+    Basta executar programa a primeira vez para criar as pastas. 
+    Após as pastas estarem criadas, a execução do programa vai ocorrer como esperado. 
