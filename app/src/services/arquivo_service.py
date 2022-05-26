@@ -37,4 +37,4 @@ class ArquivoService:
             destino = f'{self.pasta_impressos}/{arquivo}'
             shutil.move(origem, destino)
 
-        print(f'Arquivos {self.arquivos} movidos para a pasta impresso')
+        print(f'Arquivos {self.arquivos} movidos para a pasta {self.pasta_impressos}')
