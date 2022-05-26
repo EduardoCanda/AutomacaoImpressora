@@ -5,7 +5,7 @@ Este projeto serve para mandar arquivos PDF para a impressão automaticamente.
     PyAutoGUI==0.9.53
     webdriver_manager
 
-### Para utilizar este programa, é necessário criar três pastas no C:/
+### Para utilizar este programa, é necessário criar três pastas no C:\
     C:\Imprimir
     O programa vai ler os arquivos à serem imprimidos a partir desta pasta.
     
