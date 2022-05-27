@@ -4,6 +4,7 @@
     selenium==4.1.5
     PyAutoGUI==0.9.53
     webdriver_manager==3.7.0
+    pyinstaller==5.1
 
 ### Para utilizar este programa, é necessário criar três pastas no C:\
     C:\Imprimir
