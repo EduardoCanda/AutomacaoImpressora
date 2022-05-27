@@ -25,11 +25,12 @@
 
 #### 2 - Utilizar o navegador Google Chrome:
     Este software utiliza o Chrome para ler os arquivos PDF e manda-los a impressora.
-    Além disso, o software utiliza um driver nativo do Chrome para o navegador ser controlado pelo software.
-    O software não vai funcionar em outros navegadores.
+    Além disso, o software utiliza um driver nativo do Chrome para o navegador ser controlado auirátomaticamente.
+    Não irá funcionar em outros navegadores.
 
 #### 3 - Configuração da impressora:
     É importante que a impressora já esteja configurada para imprimir arquivos através Chrome.
     E que no momento de leitura do arquivo, a impressora esteja selecionada no "Destino".
-
+    
+    Exemplo abaixo:
 ![img.png](img.png)
