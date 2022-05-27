@@ -28,8 +28,8 @@ def imprimir_arquivos(
         # Aguardar arquivo carregar no navegador
         if contador == 1:
             logger.gravar_log('Adicionando primeiro arquivo da fila de impressão...')
-            logger.gravar_log('Aguardando 15 segundos para o próximo arquivo a ser impresso...')
-            time.sleep(15)
+            logger.gravar_log('Aguardando 30 segundos para o próximo arquivo a ser impresso...')
+            time.sleep(30)
         else:
             time.sleep(2.5)
 
