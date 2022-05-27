@@ -41,7 +41,6 @@ def executar():
 
     logger.gravar_log('Conferindo webdriver...')
     service = Service(ChromeDriverManager(path=r'./chromedriver').install())
-    # service = Service(r'./chromedriver.exe')
 
     impressora_service.imprimir_arquivos(
         caminho_arquivos,
