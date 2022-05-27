@@ -1,4 +1,4 @@
-## Este projeto serve para mandar arquivos para a impressão automaticamente.
+## Este projeto serve para mandar arquivos PDF para a impressão automaticamente.
 
 ### Pacotes externos instalados:
     selenium==4.1.5
