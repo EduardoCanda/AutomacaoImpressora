@@ -4,7 +4,7 @@ import time
 from typing import List
 from src.services.logger_service import Logger
 
-pg.PAUSE = 1
+pg.PAUSE = 2
 
 
 def imprimir_arquivos(
@@ -19,22 +19,20 @@ def imprimir_arquivos(
     for caminho in caminho_arquivos:
         # Abrir arquivo no navegador
         webdriver.get(caminho)
+        time.sleep(1)
 
+        # Selecionar ícone da impressora
+        pg.hotkey('ctrl', 'p')
         contador += 1
 
         # Aguardar arquivo carregar no navegador
         if contador == 1:
-            logger.gravar_log('Imprimindo primeiro arquivo da fila...')
-            logger.gravar_log('Aguardando 30 segundos para o próximo arquivo ser impresso...')
-            time.sleep(30)
+            logger.gravar_log('Adicionando primeiro arquivo da fila de impressão...')
+            logger.gravar_log('Aguardando 15 segundos para o próximo arquivo a ser impresso...')
+            time.sleep(15)
         else:
-            time.sleep(3.5)
-
-        # Selecionar ícone da impressora
-        pg.hotkey('ctrl', 'p')
-        time.sleep(1)
+            time.sleep(2.5)
 
         # Apertar botão imprimir
         pg.press('enter')
-        time.sleep(1)
         logger.gravar_log(f'Arquivo {caminho} adicionado na fila de impressão.')
